@@ -19,7 +19,7 @@ const FormSchema = Yup.object().shape({
   cep: Yup.string().required("Required"),
 });
 
-const FormYupValidation = () => {
+const FormProfessor = () => {
   const handleSubmitting = (values, { setSubmitting, setStatus }) => {
     setStatus({ isValidating: true });
     setTimeout(() => {
@@ -264,4 +264,4 @@ const FormYupValidation = () => {
   );
 };
 
-export default FormYupValidation;
+export default FormProfessor;
